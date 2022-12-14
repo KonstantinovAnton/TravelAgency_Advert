@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="460eb5e145de4303858630916c43f616" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="7.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Country" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Gender" Width="1.5" PointX="9.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Hotel" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Nutrition" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Payment_Type" Width="1.5" PointX="7.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PhotoUser" Width="1.5" PointX="14.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Role" Width="1.5" PointX="9.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sale" Width="1.5" PointX="9.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tour" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tour_Type" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="12" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Hotel_City" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_City" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_City1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sale_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Hotel_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sale_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_User_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_Nutrition" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sale_Payment_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PhotoUser_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sale_Tour" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tour_Tour_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

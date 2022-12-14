@@ -1,0 +1,73 @@
+﻿<Page x:Class="TravelAgency.PageRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TravelAgency"
+      mc:Ignorable="d" 
+      d:DesignHeight="490" d:DesignWidth="800"
+      Title="PageRegistration"
+  
+      >
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+           
+        </Grid.RowDefinitions>
+        <StackPanel  Orientation="Vertical" Background="#8d99ae">
+
+            <StackPanel   Orientation="Vertical" >
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Margin="5">
+                        <Label HorizontalAlignment="Center" Margin="0,0,70,0" Style="{StaticResource labelStyle}">Фамилия</Label>
+                    <TextBox Name="textBoxSurname" Style="{StaticResource textBoxStyle}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <Label HorizontalAlignment="Center" Margin="0,0,95,0" Style="{StaticResource labelStyle}">Имя</Label>
+                        <TextBox Name="textBoxName" Style="{StaticResource textBoxStyle}"></TextBox>
+                    </StackPanel >
+                    <StackPanel Margin="5">
+                        <Label HorizontalAlignment="Center" Margin="0,0,68,0"  Style="{StaticResource labelStyle}">Отчество</Label>
+                        <TextBox Name="textBoxPatronymic" Style="{StaticResource textBoxStyle}" ></TextBox>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Margin="0,10,0,0">
+                        <Label HorizontalAlignment="Center" Margin="0,0,110,0" Style="{StaticResource labelStyle}" >Пол</Label>
+                        <GroupBox Width="200" Height="35" BorderThickness="0"  FontSize="15" Margin="0,5,0,0" >
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <RadioButton Name="radioBtnMale"  Content="Мужской" Margin="5"/>
+                                <RadioButton Name="radioBtnFemale" Content="Женский" Margin="5"></RadioButton>
+                            </StackPanel>
+                        </GroupBox>
+                  </StackPanel>
+                <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,10,0,0">
+                            <Label Style="{StaticResource labelStyle}">Дата рождения</Label>
+                        <DatePicker Margin="0,5,0,0" Name="datePickBirthday" Width="190" HorizontalAlignment="Left" FontSize="15"></DatePicker>
+                    </StackPanel>
+                </StackPanel>
+           </StackPanel>
+
+                <Label HorizontalAlignment="Center" Margin="0,0,100,0" Style="{StaticResource labelStyle}">Логин</Label>
+                <TextBox Name="textBoxLogin" Width="170" Style="{StaticResource textBoxStyle}"></TextBox>
+
+                <Label HorizontalAlignment="Center" Margin="0,0,90,0" Style="{StaticResource labelStyle}">Пароль</Label>
+                <PasswordBox Name="passBox" Width="170" Style="{StaticResource passwordBoxStyle}"></PasswordBox>
+
+                <Label HorizontalAlignment="Center" Margin="0,0,18,0" Style="{StaticResource labelStyle}">Повтор пароля</Label>
+                <PasswordBox Name ="passBoxRepeatPass" Width="170" Style="{StaticResource passwordBoxStyle}"></PasswordBox>
+                
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                
+            </StackPanel>
+
+            <Button Name="btnRegistrate" Click="btnRegistrate_Click" Margin="0,30,0,0" Height="40" Width="180" Foreground="#dee2e6" Template="{StaticResource ButtonTemplate}" FontSize="20">Запомнить меня</Button>
+        </StackPanel>
+        
+        
+    </Grid>
+</Page>
